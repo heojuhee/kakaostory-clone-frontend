@@ -1,1 +1,1 @@
-# kakaostory-clone-front
+# kakaostory-clone-frontend
