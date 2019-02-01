@@ -1,0 +1,39 @@
+*, ::after, ::before {
+    box-sizing: inherit;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+ 
+#yellow{ /*이상한 쓸모없는 top 막대기*/
+    margin: 0px 0px 0px 0px;
+    height: 4px;
+    width: 1535px;
+
+}
+#logo_black{
+    width: 57px;
+    height: 18px;
+    margin: 18px 0px 0px 25px;
+}
+#myid{
+    margin: -19px 0px 0px 90;
+    font-size: 17.5px;
+    font-weight: 700;
+}
+#hr1{
+    margin-top: 13px; 
+    border: 600;
+}
+#bar{
+    margin: 20px 0px 0px 360px;
+}
+#kakaoid{
+    font-weight: 900;
+    font-size: 20px;
+    margin: 33px 0px 0px 360px; 
+}
+#hr2{
+    width: 810px;
+    margin: 10px 0px 0px 355px;
+    color: #000000;
+    background-color: #000000;
+}
