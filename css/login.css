@@ -73,3 +73,6 @@ input::placeholder{
     padding-bottom: -10px; 
     font-size: 14px;
 }
+.login-form {
+    color: white;
+}
