@@ -27,17 +27,162 @@
         <div>
             <img src="assets/logo_black.png" id="logo_black">
             <p id="myid">계정</p>
+            <a href="#" class="toptext">로그인&nbsp;</a>
+            <a href="#" class="toptext1">도움말&nbsp;</a>
+            <a href="#" class="toptext2">문의하기&nbsp;</a>
             <hr id="hr1">
-        </div>
         <div>
             <img src="assets/bar.png" id="bar">
             <p id="kakaoid">카카오계정 정보입력</p>
             <hr id="hr2">
         </div>
+        <!-- 이메일 -->
+        <div class="kakao_email">
+            <strong>
+                <p>카카오계정 이메일</p>
+                <input type="text" class="textemail">
+            </strong>
+            <p class="golbang">@</p>
+            <input type="email" class="textemail1">
+        </div>
+        <div>
+            <select name="domainselect" class="domainselect">
+                <option value="0">&nbsp;&nbsp;도메인 선택</option>
+                <option value="1">naver.com</option>
+                <option value="2">hanmail.net</option>
+                <option value="3">nate.com</option>
+                <option value="4">gmail.com</option>
+                <option value="5">daum.net</option>
+                <option value="6">hotmail.com</option>
+                <option value="7">lycos.co.kr</option>
+                <option value="8">korea.com</option>
+                <option value="9">dreamwiz.com</option>
+                <option value="10">yahoo.com</option>
+                <option value="11">ymail.com</option>
+                <option value="12">live.com</option>
+                <option value="13">aol.com</option>
+                <option value="14">msn.com</option>
+                <option value="15">me.com</option>
+                <option value="16">icloud.com</option>
+                <option value="17">rocketmail.com</option>
+                <option value="18">qq.com</option>
+                <option value="19">직접입력</option>
+            </select>
+        </div>
+        <div class="text">
+            <p class="text1">· 입력한 이메일로 인증메일이 발송됩니다.</p>
+            <p class="text2">· 꼭 실제로 사용중인 이메일주소를 입력해주세요. 비밀번호 분실 시 이메일을 통해 재설정이 가능합니다.</p>
+        </div>
+        <!-- 비밀번호 -->
+        <div class="password">
+            <strong>
+                <p class="passwordtext">비밀번호(8~32자리)</p>
+            </strong>
+            <input type="password" class="passwordarea" placeholder="&nbsp;비밀번호(8~32)">
+        </div>
+        <div class="passwordok">
+            <strong>
+                <p class="passwordtextok">비밀번호 재입력</p>
+            </strong>
+            <input type="password" class="passwordareaok" placeholder="&nbsp;비밀번호 재입력">
+            <p class="text3">· 비밀번호는 8 ~ 32 자의 영문 대소문자, 숫자, 특수문자를 조합하여 설정해주세요.
+                <br> · 다른사이트에서 사용하는 것과 동일하거나 쉬운 비밀번호는 사용하지 마세요.
+                <br> · 안전한 계정 사용을 위해 비밀번호는 주기적으로 변경해주세요.</p>
+            <!-- 닉네임 -->
+            <div class="nickname">
+                <strong>
+                    <p class="nickname">닉네임</p>
+                </strong>
+                <input type="name" class="nicknamearea" placeholder="&nbsp;닉네임을 입력해주세요">
+            </div>
+            <!-- 생년월일 -->
+            <div class="birth">
+                <strong>
+                    <p class="birthtext">생년월일</p>
+                </strong>
+            </div>
+            <div class="birth2">
+                <input type="number" class="birtharea_year" placeholder="&nbsp;&nbsp;년">
+                <select name="birth_month" class="monthselect">
+                    <option value="0">&nbsp;월</option>
+                    <option value="1">&nbsp;1</option>
+                    <option value="2">&nbsp;2</option>
+                    <option value="3">&nbsp;3</option>
+                    <option value="4">&nbsp;4</option>
+                    <option value="5">&nbsp;5</option>
+                    <option value="6">&nbsp;6</option>
+                    <option value="7">&nbsp;7</option>
+                    <option value="8">&nbsp;8</option>
+                    <option value="9">&nbsp;9</option>
+                    <option value="10">&nbsp;10</option>
+                    <option value="11">&nbsp;11</option>
+                    <option value="12">&nbsp;12</option>
+                </select>
+                <select name="birth_day" class="dayselect">
+                    <option value="0">&nbsp;일</option>
+                    <option value="1">&nbsp;1</option>
+                    <option value="2">&nbsp;2</option>
+                    <option value="3">&nbsp;3</option>
+                    <option value="4">&nbsp;4</option>
+                    <option value="5">&nbsp;5</option>
+                    <option value="6">&nbsp;6</option>
+                    <option value="7">&nbsp;7</option>
+                    <option value="8">&nbsp;8</option>
+                    <option value="9">&nbsp;9</option>
+                    <option value="10">&nbsp;10</option>
+                    <option value="11">&nbsp;11</option>
+                    <option value="12">&nbsp;12</option>
+                    <option value="0">&nbsp;13</option>
+                    <option value="1">&nbsp;14</option>
+                    <option value="2">&nbsp;15</option>
+                    <option value="3">&nbsp;16</option>
+                    <option value="4">&nbsp;17</option>
+                    <option value="5">&nbsp;18</option>
+                    <option value="6">&nbsp;19</option>
+                    <option value="7">&nbsp;20</option>
+                    <option value="8">&nbsp;21</option>
+                    <option value="9">&nbsp;22</option>
+                    <option value="10">&nbsp;23</option>
+                    <option value="11">&nbsp;24</option>
+                    <option value="12">&nbsp;25</option>
+                    <option value="7">&nbsp;26</option>
+                    <option value="8">&nbsp;27</option>
+                    <option value="9">&nbsp;28</option>
+                    <option value="10">&nbsp;29</option>
+                    <option value="11">&nbsp;30</option>
+                    <option value="12">&nbsp;31</option>
+                </select>
+                <input type="checkbox">&nbsp;양력
+                <input type="checkbox">&nbsp;윤달
+            </div>
+            <div>
+                <strong>
+                    <p class="people">성별</p>
+                </strong>
+            </div>
+            <div class="pp">
+                <input type="checkbox" class="girl">여자&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" class="boy">남자&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" class="nothing">선택안함
+            </div>
+            <div class ="nextbtn">
+                <input type="submit" value="다음">
+            </div>
 
 
 
-        <script src="#"></script>
+
+
+
+
+
+
+
+
+
+
+
+            <script src="#"></script>
     </form>
 </body>
 
