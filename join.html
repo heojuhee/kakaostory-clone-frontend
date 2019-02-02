@@ -5,21 +5,16 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="css/join.css">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-
-
-
     <title>로그인 : 카카오스토리</title>
 </head>
-
 
 <body>
     <form>
@@ -27,25 +22,31 @@
             <img src="assets/yellow.JPG" id="yellow">
         </div>
         <div>
-            <img src="assets/logo_black.png" id="logo_black">
+            <img src="assets/logoBlack.png" id="logoBlack">
             <p id="myid">계정</p>
-            <a href="#" class="toptext">로그인&nbsp;</a>
-            <a href="#" class="toptext1">도움말&nbsp;</a>
-            <a href="#" class="toptext2">문의하기&nbsp;</a>
-            <hr id="hr1">
+        </div>
+        <div>
+            <a href="#" class="toptext">로그인</a>
+
+            <a href="#" class="toptext1">도움말</a>
+
+            <a href="#" class="toptext2">문의하기</a>
+        </div>
+        <hr id="hr1">
+        </div>
         <div>
             <img src="assets/bar.png" id="bar">
             <p id="kakaoid">카카오계정 정보입력</p>
             <hr id="hr2">
         </div>
         <!-- 이메일 -->
-        <div class="kakao_email">
+        <div class="kakaoEmail">
             <strong>
                 <p>카카오계정 이메일</p>
                 <input type="text" class="textemail">
             </strong>
             <p class="golbang">@</p>
-            <input type="email" class="textedaum" id ="texteDaum">
+            <input type="email" class="textedaum" id="texteDaum">
         </div>
         <div>
             <select name="domainselect" class="domainselect" id="domainSelect">
@@ -55,19 +56,19 @@
                 <option value="nate.com">nate.com</option>
                 <option value="gmail.com">gmail.com</option>
                 <option value="daum.net">daum.net</option>
-                <option value="6">hotmail.com</option>
-                <option value="7">lycos.co.kr</option>
-                <option value="8">korea.com</option>
-                <option value="9">dreamwiz.com</option>
-                <option value="10">yahoo.com</option>
-                <option value="11">ymail.com</option>
-                <option value="12">live.com</option>
-                <option value="13">aol.com</option>
-                <option value="14">msn.com</option>
-                <option value="15">me.com</option>
-                <option value="16">icloud.com</option>
-                <option value="17">rocketmail.com</option>
-                <option value="18">qq.com</option>
+                <option value="hotmail.com">hotmail.com</option>
+                <option value="lycos.co.kr">lycos.co.kr</option>
+                <option value="korea.com">korea.com</option>
+                <option value="dreamwiz.com">dreamwiz.com</option>
+                <option value="yahoo.com">yahoo.com</option>
+                <option value="ymail.com">ymail.com</option>
+                <option value="live.com">live.com</option>
+                <option value="aol.com">aol.com</option>
+                <option value="msn.com">msn.com</option>
+                <option value="me.com">me.com</option>
+                <option value="icloud.com">icloud.com</option>
+                <option value="rocketmail.com">rocketmail.com</option>
+                <option value="qq.com">qq.com</option>
                 <option value="19">직접입력</option>
             </select>
         </div>
@@ -97,66 +98,6 @@
                 </strong>
                 <input type="name" class="nicknamearea" placeholder="&nbsp;닉네임을 입력해주세요">
             </div>
-            <!-- 생년월일 -->
-            <div class="birth">
-                <strong>
-                    <p class="birthtext">생년월일</p>
-                </strong>
-            </div>
-            <div class="birth2">
-                <input type="number" class="birtharea_year" placeholder="&nbsp;&nbsp;년">
-                <select name="birth_month" class="monthselect">
-                    <option value="0">&nbsp;월</option>
-                    <option value="1">&nbsp;1</option>
-                    <option value="2">&nbsp;2</option>
-                    <option value="3">&nbsp;3</option>
-                    <option value="4">&nbsp;4</option>
-                    <option value="5">&nbsp;5</option>
-                    <option value="6">&nbsp;6</option>
-                    <option value="7">&nbsp;7</option>
-                    <option value="8">&nbsp;8</option>
-                    <option value="9">&nbsp;9</option>
-                    <option value="10">&nbsp;10</option>
-                    <option value="11">&nbsp;11</option>
-                    <option value="12">&nbsp;12</option>
-                </select>
-                <select name="birth_day" class="dayselect">
-                    <option value="0">&nbsp;일</option>
-                    <option value="1">&nbsp;1</option>
-                    <option value="2">&nbsp;2</option>
-                    <option value="3">&nbsp;3</option>
-                    <option value="4">&nbsp;4</option>
-                    <option value="5">&nbsp;5</option>
-                    <option value="6">&nbsp;6</option>
-                    <option value="7">&nbsp;7</option>
-                    <option value="8">&nbsp;8</option>
-                    <option value="9">&nbsp;9</option>
-                    <option value="10">&nbsp;10</option>
-                    <option value="11">&nbsp;11</option>
-                    <option value="12">&nbsp;12</option>
-                    <option value="0">&nbsp;13</option>
-                    <option value="1">&nbsp;14</option>
-                    <option value="2">&nbsp;15</option>
-                    <option value="3">&nbsp;16</option>
-                    <option value="4">&nbsp;17</option>
-                    <option value="5">&nbsp;18</option>
-                    <option value="6">&nbsp;19</option>
-                    <option value="7">&nbsp;20</option>
-                    <option value="8">&nbsp;21</option>
-                    <option value="9">&nbsp;22</option>
-                    <option value="10">&nbsp;23</option>
-                    <option value="11">&nbsp;24</option>
-                    <option value="12">&nbsp;25</option>
-                    <option value="7">&nbsp;26</option>
-                    <option value="8">&nbsp;27</option>
-                    <option value="9">&nbsp;28</option>
-                    <option value="10">&nbsp;29</option>
-                    <option value="11">&nbsp;30</option>
-                    <option value="12">&nbsp;31</option>
-                </select>
-                <input type="checkbox">&nbsp;양력
-                <input type="checkbox">&nbsp;윤달
-            </div>
             <div>
                 <strong>
                     <p class="people">성별</p>
@@ -167,11 +108,12 @@
                 <input type="checkbox" class="boy">남자&nbsp;&nbsp;&nbsp;
                 <input type="checkbox" class="nothing">선택안함
             </div>
-            <div class ="nextbtn">
+            <div class="nextbtn">
                 <input type="submit" value="다음">
             </div>
 
-
+            
+            <link rel="stylesheet" href="css/join.css">
             <script src="js/join.js"></script>
     </form>
 </body>

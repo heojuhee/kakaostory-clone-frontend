@@ -2,15 +2,10 @@
     box-sizing: inherit;
     font-family: 'Malgun Gothic', sans-serif;
 }
-
-/* body{
-    background-image: url("../assets/image3.jpg");
-    
-} */
 #logo{
     height: 30px;
-    margin: 25px 0px 0px 25px;}
-    
+    margin: 25px 0px 0px 25px;
+}
 #msg1{
     width: 203px;
     height: 94px;
@@ -21,24 +16,20 @@
     height: 40px;
     margin: 20px 0px 0px 615px;
 }
-
 input::placeholder{
     font-size: 13px;   
 }
-
 #textpassword{
     width: 303px;
     height: 40px;
     margin: 10px 0px 0px 615px;
 }
-
 #checkbox{
     margin: 15px 0px 0px 615px;
     font-size: 40px;
     /* background-color: #f9df33;
     font-style: inherit; */
 }
-
 #loginbtn{
     width: 303px;
     height: 45px;
@@ -48,20 +39,17 @@ input::placeholder{
     background: #f9df33;
     border: solid 2px #f9df33;
     border-radius: 2px;
-    
 }
 #join_text{
     margin: 0px 0px 0px 615px;
     color: white;
     font-size: 11.5px;
 }
-
 #findid{
     margin: 0px 0px 0px 70px;
     color: white;
     font-size: 11.5px;
 }
-
 #resetpassword{
     margin: 0px 0px 0px 8px;
     color: white;
@@ -69,10 +57,37 @@ input::placeholder{
 }
 #line{
     color: white;
-    margin: -23px 0px 0px 825.5px;
+    margin: -38px 0px 0px 825.5px;
     padding-bottom: -10px; 
     font-size: 14px;
 }
 .login-form {
     color: white;
 }
+.btn{
+    margin: -8.15% 0% 0% 57%;
+}
+.popup{
+    background-color: #333333;
+    width: 18.4%;
+    height: 11.8%;
+    font-size: 13.5px;
+    color: white;
+    opacity: 0;
+    margin: -8.15% 0% 0% 60.5%;
+    padding: 0.2% 0% 0% 0.6%;
+}
+.popup:target{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
