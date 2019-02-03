@@ -80,7 +80,14 @@ input::placeholder{
 .popup:target{
     opacity: 1;
 }
-
+#errorBox{
+   margin-left: 40%;
+    background-color: black;
+    color: aliceblue;
+    width: 20%;
+    height: 6%;
+    display: none;
+}
 
 
 

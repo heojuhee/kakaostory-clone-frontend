@@ -16,15 +16,15 @@ function main() {
             let UserEmail = document.getElementById("textemail").value + "@" + document.getElementById("texteDaum").value;
 
             if (!UserEmail.match(/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i)) {
-                layerPopUp(3);
+                layerPopUp(1);
                 return false;
             }
             else if (UserPassword.length < 8 || !UserPassword.match(/([a-zA-Z0-9].*[!,@,#,$,%,^,&,*,?,_,~,-])|([!,@,#,$,%,^,&,*,?,_,~,-].*[a-zA-Z0-9])/)) {
-                layerPopUp(1);
+                layerPopUp(2);
                 return false;
             } // if
             else if (UserPassword != document.getElementById("passwordareaok").value) {
-                layerPopUp(2);
+                layerPopUp(3);
                 return false;
             }
             else signUp();
@@ -67,14 +67,13 @@ function wrapWindowByMask(val) { // 레이어팝업 - 띄워주기
     $("#popUpmask").fadeTo("slow", 0.6);
     $("#popUpWindow").show();
 
-    if (val === 3) {
+    if (val === 1) {
         document.getElementById("popUpContent").innerHTML = "이메일 형식이 올바르지 않습니다.";
     }
-    else if (val === 1) {
+    else if (val === 2) {
         document.getElementById("popUpContent").innerHTML = "비밀번호는 8~32자리로 입력할 수 있어요!";
     }
-    else if (val === 2) {
+    else if (val === 3) {
         document.getElementById("popUpContent").innerHTML = "입력한 비밀번호와 재입력한 비밀번호가 일치하지 않습니다. 다시 확인해 주세요.";
     }
-
 }
