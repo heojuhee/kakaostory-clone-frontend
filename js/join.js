@@ -13,34 +13,32 @@ function main() {
     });
 
 
+    // submit시 비밀번호 유효성 검사
+    if (document.getElementById('joinForm'))
+        document.getElementById('joinForm').onsubmit = function () {
+
+            var UserPassword = document.getElementById("passwordTextId").value;
+            alert(UserPassword);
+
+            if (UserPassword.length < 8 || !UserPassword.match(/([a-zA-Z0-9].*[!,@,#,$,%,^,&,*,?,_,~,-])|([!,@,#,$,%,^,&,*,?,_,~,-].*[a-zA-Z0-9])/)) {
+                alert("비밀번호는 8~32자리로 입력할 수 있어요!");
+                return false;
+            }
+            else if (UserPassword != document.getElementById("passwordareaok").value) {
+                alert("입력한 비밀번호와 재입력한 비밀번호가 일치하지 않습니다. 다시 확인해 주세요.");
+                return false;
+            }
+            else signUp();
+        };
+
+
+
+} // function main
+
+
+
+function signUp() { // 회원가입
+
+
 
 }
-
-function autoFillEmail() { // 아이디 중복 체크
-
-    // $(document).ready(function() {
-
-    //     #texteDaum = $("#domainSelect option:selected").val();
-
-    // });
-
-}
-
-
-// $('#prod_type').change(function(){
-//     var idx = $('#prod_type option').index( $(this).find('option:selected') );
-//     $('#prod_type_idx').val(idx);
-//     if ($(this).val() != "") {
-//       var duty_per = $(this).val().split("|");
-//       $('#duty_per').html("관세 : "+duty_per[0]+"% 부가세 : "+duty_per[1]+"%");
-//     }
-//   });
-
-//   var prod_type_idx = "";
-//   if (prod_type_idx != "") {
-//     $('#prod_type option:eq('+prod_type_idx+')').attr("selected",true);
-//     var duty_per = $('#prod_type option:eq('+prod_type_idx+')').val().split("|");
-//     $('#duty_per').html("관세 : "+duty_per[0]+"% 부가세 : "+duty_per[1]+"%");
-
-//                 // if - End
-//               }

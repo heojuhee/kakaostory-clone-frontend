@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <form>
+    <form id="joinForm">
         <div>
             <img src="assets/yellow.JPG" id="yellow">
         </div>
@@ -26,7 +26,7 @@
             <p id="myid">계정</p>
         </div>
         <div>
-            <a href="#" class="toptext">로그인</a>
+            <a href="login.html" class="toptext">로그인</a>
 
             <a href="#" class="toptext1">도움말</a>
 
@@ -46,7 +46,7 @@
                 <input type="text" class="textemail">
             </strong>
             <p class="golbang">@</p>
-            <input type="email" class="textedaum" id="texteDaum">
+            <input type="text" class="textedaum" id="texteDaum">
         </div>
         <div>
             <select name="domainselect" class="domainselect" id="domainSelect">
@@ -69,7 +69,7 @@
                 <option value="icloud.com">icloud.com</option>
                 <option value="rocketmail.com">rocketmail.com</option>
                 <option value="qq.com">qq.com</option>
-                <option value="19">직접입력</option>
+                <option value="">직접입력</option>
             </select>
         </div>
         <div class="text">
@@ -79,15 +79,15 @@
         <!-- 비밀번호 -->
         <div class="password">
             <strong>
-                <p class="passwordtext">비밀번호(8~32자리)</p>
+                <p class="passwordtext" >비밀번호(8~32자리)</p>
             </strong>
-            <input type="password" class="passwordarea" placeholder="&nbsp;비밀번호(8~32)">
+            <input type="password" class="passwordarea" id="passwordTextId" placeholder="&nbsp;비밀번호(8~32)"  maxlength="32">
         </div>
         <div class="passwordok">
             <strong>
                 <p class="passwordtextok">비밀번호 재입력</p>
             </strong>
-            <input type="password" class="passwordareaok" placeholder="&nbsp;비밀번호 재입력">
+            <input type="password" class="passwordareaok" id="passwordareaok" placeholder="&nbsp;비밀번호 재입력" maxlength="32">
             <p class="text3">· 비밀번호는 8 ~ 32 자의 영문 대소문자, 숫자, 특수문자를 조합하여 설정해주세요.
                 <br> · 다른사이트에서 사용하는 것과 동일하거나 쉬운 비밀번호는 사용하지 마세요.
                 <br> · 안전한 계정 사용을 위해 비밀번호는 주기적으로 변경해주세요.</p>
