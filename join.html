@@ -7,12 +7,16 @@
         crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/join.css">
+
     <title>로그인 : 카카오스토리</title>
 </head>
 
@@ -43,10 +47,10 @@
         <div class="kakaoEmail">
             <strong>
                 <p>카카오계정 이메일</p>
-                <input type="text" class="textemail">
+                <input type="text" class="textemail" id="textemail" required>
             </strong>
             <p class="golbang">@</p>
-            <input type="text" class="textedaum" id="texteDaum">
+            <input type="text" class="textedaum" id="texteDaum" required>
         </div>
         <div>
             <select name="domainselect" class="domainselect" id="domainSelect">
@@ -81,13 +85,13 @@
             <strong>
                 <p class="passwordtext">비밀번호(8~32자리)</p>
             </strong>
-            <input type="password" class="passwordarea" id="passwordTextId" placeholder="&nbsp;비밀번호(8~32)" maxlength="32">
+            <input type="password" class="passwordarea" id="passwordTextId" placeholder="&nbsp;비밀번호(8~32)" maxlength="32" required>
         </div>
         <div class="passwordok">
             <strong>
                 <p class="passwordtextok">비밀번호 재입력</p>
             </strong>
-            <input type="password" class="passwordareaok" id="passwordareaok" placeholder="&nbsp;비밀번호 재입력" maxlength="32">
+            <input type="password" class="passwordareaok" id="passwordareaok" placeholder="&nbsp;비밀번호 재입력" maxlength="32" required>
             <p class="text3">· 비밀번호는 8 ~ 32 자의 영문 대소문자, 숫자, 특수문자를 조합하여 설정해주세요.
                 <br> · 다른사이트에서 사용하는 것과 동일하거나 쉬운 비밀번호는 사용하지 마세요.
                 <br> · 안전한 계정 사용을 위해 비밀번호는 주기적으로 변경해주세요.</p>
@@ -96,7 +100,7 @@
                 <strong>
                     <p class="nickname">닉네임</p>
                 </strong>
-                <input type="name" class="nicknamearea" placeholder="&nbsp;닉네임을 입력해주세요">
+                <input type="name" class="nicknamearea" placeholder="&nbsp;닉네임을 입력해주세요" required>
             </div>
             <div>
                 <strong>
@@ -106,53 +110,25 @@
             <div class="pp">
                 <input type="radio" class="girl" name="genderSelect">여자&nbsp;&nbsp;&nbsp;
                 <input type="radio" class="boy" name="genderSelect">남자&nbsp;&nbsp;&nbsp;
-                <input type="radio" class="nothing" name="genderSelect">선택안함
+                <input type="radio" class="nothing" name="genderSelect" checked="checked">선택안함
             </div>
-            <!-- <div class="nextbtn">
+            <div class="nextbtn">
                 <input type="submit" value="다음">
-            </div> -->
-
-            <div>
-                <a href="#pop1" class="btn">
-                    <img src="assets/explain.png">
-                </a>
-                <!-- <a href="#pop2" class="btn2">
-                    <img src="assets/explain.png">
-                </a> -->
-                <div class="popup1" id="pop1">
-                    <p>비밀번호는 8~32자리로 입력할 수 있어요!</p>
-                    <a href="#">
-                        <img src="assets/arrowDown.png">
-                    </a>
-                </div>
-                <div class="popup2" id="pop2">
-                    <p>입력한 비밀번호와 재입력한 비밀번호가 일치하지 않습니다. 다시 확인해 주세요.</p>
-                    <a href="#">
-                        <img src="assets/arrowDown.png">
-                    </a>
-                </div>
             </div>
 
+            <div id ="wrap"> 
+                <div id = "container">  
+                    <div id="popUpmask"></div>
+                    <div id="popUpWindow">
+                        <p id="popUpContent"></p>
+                        <a href="#" id="close">닫기(여기 이미지 넣으삼)</a>
+                    </div>
+                </div>
+            </div>
+        
+        
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <link rel="stylesheet" href="css/join.css">
             <script src="js/join.js"></script>
     </form>
 </body>

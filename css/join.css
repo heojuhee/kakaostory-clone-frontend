@@ -170,8 +170,32 @@
     margin: 1% 0% 0% 45%;
 }
 
+/*popUp*/
+
+#popUpmask {  
+    position:absolute;  
+    z-index:9000;  
+    background-color:#000;  
+    display:none;  
+    left:0;
+    top:0;
+} 
+/* 팝업으로 뜨는 윈도우 css  */ 
+#popUpWindow{
+    display: none;
+    position:absolute;  
+    left:40%;
+    top:50%;
+    width:300px;
+    height:100px;
+    background-color:#FFF;
+    z-index:10000;   
+ }
+
+
+
 /* 팝업창 */
-.popup1{
+/* #pop1{
     position: absolute;
     background-color: rgb(238, 235, 235);
     width: 25.5%;
@@ -185,12 +209,12 @@
     border-radius: 3.5px;
     z-index: 200;
 }
-.popup1:target{
+#pop1:target{
     opacity: 1;
-    visibility: hidden;
-}
+    display: none;
+} */
 
-.popup2{
+/* .popup2{
     position: absolute;
     background-color: rgb(238, 235, 235);
     width: 25.5%;
@@ -206,5 +230,6 @@
 }
 .popup2:target{
     opacity: 1;
-}
+    visibility: hidden;
+} */
 /* //팝업창 */
