@@ -33,13 +33,24 @@
             <img src="assets/msg1.png" id="msg1">
         </div>
 
-
-        
         <div class="login-form">
             <input type="text" id="textid" placeholder="&nbsp;&nbsp;이메일 또는 전화번호" required>
-            <input type="password" id="textpassword" placeholder="&nbsp;&nbsp;비밀번호" required><br>
+            <input type="password" id="textpassword" placeholder="&nbsp;&nbsp;비밀번호" required>
+            <br>
             <input type="checkbox" id="checkbox">로그인 상태 유지
             <label for="checkbox"></label>
+        </div>
+
+        <!-- 물음표 -->
+        <div>
+            <a href="#pop1" class="btn">
+                <img src="assets/explain.png">
+            </a>
+            <div class="popup" id="pop1">
+                <p>카카오계정은 모든 카카오 서비스와 열결된
+                    <br> 이메일 형식의 아이디입니다.</p>
+                <a href="#">닫기</a>
+            </div>
         </div>
 
         <div>
@@ -49,6 +60,10 @@
             <a href="#" id="resetpassword">비밀번호 재설정</a>
         </div>
         <p id="line"> | </p>
+
+        
+
+
         <script src="js/login.js"></script>
     </form>
 </body>

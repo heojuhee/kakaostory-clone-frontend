@@ -1,6 +1,7 @@
 *, ::after, ::before {
     box-sizing: inherit;
     font-family: 'Nanum Gothic', sans-serif;
+    
 }
  
 #yellow{ /*이상한 쓸모없는 top 막대기*/
@@ -28,6 +29,7 @@
     margin: 0% 0% 0% 95.5%;
     color: #000000;
 }
+
 #logo_black{
     width: 57px;
     height: 18px;
@@ -38,18 +40,19 @@
     font-size: 17.5px;
     font-weight: 700;
 }
+#bar{
+    margin: 20px 0px 0px 360px;
+}
 #hr1{
     margin-top: 13px; 
     border: 600;
-}
-#bar{
-    margin: 20px 0px 0px 360px;
 }
 #kakaoid{
     font-weight: 900;
     font-size: 20px;
     margin: 33px 0px 0px 360px; 
 }
+
 #hr2{
     width: 810px;
     margin: 7px 0px 0px 360px;
@@ -162,3 +165,46 @@
     width: 30px;
     height: 50px;
 }
+
+.btn{
+    margin: 1% 0% 0% 45%;
+}
+
+/* 팝업창 */
+.popup1{
+    position: absolute;
+    background-color: rgb(238, 235, 235);
+    width: 25.5%;
+    height: 18%;
+    font-size: 18px;
+    color: #000000;
+    opacity: 0;
+    margin: -27% 0% 0% 36%;
+    padding: 1% 0% 0% 1%;
+    border: 1px solid rgb(238, 235, 235);
+    border-radius: 3.5px;
+    z-index: 200;
+}
+.popup1:target{
+    opacity: 1;
+    visibility: hidden;
+}
+
+.popup2{
+    position: absolute;
+    background-color: rgb(238, 235, 235);
+    width: 25.5%;
+    height: 18%;
+    font-size: 18px;
+    color: #000000;
+    opacity: 0;
+    margin: -27% 0% 0% 36%;
+    padding: 1% 0% 0% 1%;
+    border: 1px solid rgb(238, 235, 235);
+    border-radius: 3.5px;
+    z-index: 200;
+}
+.popup2:target{
+    opacity: 1;
+}
+/* //팝업창 */

@@ -79,9 +79,9 @@
         <!-- 비밀번호 -->
         <div class="password">
             <strong>
-                <p class="passwordtext" >비밀번호(8~32자리)</p>
+                <p class="passwordtext">비밀번호(8~32자리)</p>
             </strong>
-            <input type="password" class="passwordarea" id="passwordTextId" placeholder="&nbsp;비밀번호(8~32)"  maxlength="32">
+            <input type="password" class="passwordarea" id="passwordTextId" placeholder="&nbsp;비밀번호(8~32)" maxlength="32">
         </div>
         <div class="passwordok">
             <strong>
@@ -104,15 +104,54 @@
                 </strong>
             </div>
             <div class="pp">
-                <input type="checkbox" class="girl">여자&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" class="boy">남자&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" class="nothing">선택안함
+                <input type="radio" class="girl" name="genderSelect">여자&nbsp;&nbsp;&nbsp;
+                <input type="radio" class="boy" name="genderSelect">남자&nbsp;&nbsp;&nbsp;
+                <input type="radio" class="nothing" name="genderSelect">선택안함
             </div>
-            <div class="nextbtn">
+            <!-- <div class="nextbtn">
                 <input type="submit" value="다음">
+            </div> -->
+
+            <div>
+                <a href="#pop1" class="btn">
+                    <img src="assets/explain.png">
+                </a>
+                <!-- <a href="#pop2" class="btn2">
+                    <img src="assets/explain.png">
+                </a> -->
+                <div class="popup1" id="pop1">
+                    <p>비밀번호는 8~32자리로 입력할 수 있어요!</p>
+                    <a href="#">
+                        <img src="assets/arrowDown.png">
+                    </a>
+                </div>
+                <div class="popup2" id="pop2">
+                    <p>입력한 비밀번호와 재입력한 비밀번호가 일치하지 않습니다. 다시 확인해 주세요.</p>
+                    <a href="#">
+                        <img src="assets/arrowDown.png">
+                    </a>
+                </div>
             </div>
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <link rel="stylesheet" href="css/join.css">
             <script src="js/join.js"></script>
     </form>
