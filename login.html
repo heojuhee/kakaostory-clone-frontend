@@ -20,35 +20,46 @@
         <img src='assets/logo.png' id='logo'>
     </div>
 
-    <div>
-        <img src='assets/msg1.png' id='msg1'>
-    </div>
-
-    <form id='loginForm'>
-        <input type="text" id="textid" placeholder="&nbsp;&nbsp;이메일 또는 전화번호" required><br>
-        <input type="password" id="textpassword" placeholder="&nbsp;&nbsp;비밀번호" required><br>
-        <input type="checkbox" id="checkbox">로그인 상태 유지<br>
-        <input type="submit" id="loginbtn" value="로그인">
-    </form>
-
-    <div>
-        <a href="#pop1" class="btn">
-            <img src="assets/explain.png">
-        </a>
-        <div class="popup" id="pop1">
-            <p>카카오계정은 모든 카카오 서비스와 열결된
-                <br> 이메일 형식의 아이디입니다.</p>
-            <a href="#">닫기</a>
+    <div class='wrap_login'>
+        <div>
+            <img src='assets/msg1.png' id='msg1'>
         </div>
-    </div>
 
-    <div id="errorBox"></div>
+        <form id='loginForm'>
+            <input type="text" id="textid" placeholder="&nbsp;&nbsp;이메일 또는 전화번호" required><br>
+            <input type="password" id="textpassword" placeholder="&nbsp;&nbsp;비밀번호" required><br>
+            <input type="checkbox" id="checkbox">로그인 상태 유지<br>
+            <input type="submit" id="loginbtn" value="로그인">
+        </form>
 
-    <div>
-        <a href="join.html" id="join_text">회원가입</a>
-        <a href="#" id="findid">카카오계정 찾기</a>
-        <span id="line"> | </span>
-        <a href="#" id="resetpassword">비밀번호 재설정</a>
+        <!-- <div>
+            <a href="#pop1" class="btn">
+                <img src="assets/explain.png">
+            </a>
+            <div class="popup" id="pop1">
+                <p>카카오계정은 모든 카카오 서비스와 열결된
+                    <br> 이메일 형식의 아이디입니다.</p>
+                <a href="#">닫기</a>
+            </div>
+        </div> -->
+
+        <div id="errorBox"></div>
+
+        <div>
+            <div class='join_menu'>
+                <a href="join.html" id="join_text">회원가입</a>
+            </div>
+
+            <ul class='user_menu'>
+                <li>
+                    <a href="#" id="findid">카카오계정 찾기</a>
+                    <span id="line"> | </span>
+                </li>
+                <li>
+                    <a href="#" id="resetpassword">비밀번호 재설정</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <script src="js/login.js"></script>

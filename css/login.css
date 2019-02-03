@@ -9,12 +9,12 @@
 #msg1{
     width: 203px;
     height: 94px;
-    margin: 111px 0px 0px 615px;
+    margin: 0px 0px 0px 0px;
 }
 #textid{
     width: 303px;
     height: 40px;
-    margin: 20px 0px 0px 615px;
+    margin: 20px 0px 0px 0px;
 }
 input::placeholder{
     font-size: 13px;   
@@ -22,31 +22,31 @@ input::placeholder{
 #textpassword{
     width: 303px;
     height: 40px;
-    margin: 10px 0px 0px 615px;
+    margin: 10px 0px 0px 0px;
 }
 #checkbox{
-    margin: 15px 0px 0px 615px;
-    font-size: 40px;
+    margin: 15px 0px 0px 0px;
+    font-size: 13px;
     /* background-color: #f9df33;
     font-style: inherit; */
 }
 #loginbtn{
     width: 303px;
     height: 45px;
-    margin: 13px 0px 6px 615px;
+    margin: 13px 0px 6px 0px;
     text-align: center;
     font-weight: bolder;
     background: #f9df33;
     border: solid 2px #f9df33;
     border-radius: 2px;
+    font-size: 16px;
 }
 #join_text{
-    margin: 0px 0px 0px 615px;
+    float: left;
     color: white;
     font-size: 11.5px;
 }
 #findid{
-    margin: 0px 0px 0px 70px;
     color: white;
     font-size: 11.5px;
 }
@@ -57,7 +57,6 @@ input::placeholder{
 }
 #line{
     color: white;
-    margin: -38px 0px 0px 0px;
     padding-bottom: -10px; 
     font-size: 14px;
 }
@@ -88,13 +87,28 @@ input::placeholder{
 #loginForm {
     color: white;
 }
+.wrap_login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 304px;
+    margin: -250px 0 0 -152px;
+    font-size: 13px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+ul li {
+    float: left;
+}
 
+.join_menu {
+    float: left;
+}
 
-
-
-
-
-
-
-
+.user_menu {
+    float: right;
+}
