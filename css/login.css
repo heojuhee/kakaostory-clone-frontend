@@ -57,12 +57,9 @@ input::placeholder{
 }
 #line{
     color: white;
-    margin: -38px 0px 0px 825.5px;
+    margin: -38px 0px 0px 0px;
     padding-bottom: -10px; 
     font-size: 14px;
-}
-.login-form {
-    color: white;
 }
 .btn{
     margin: -8.15% 0% 0% 57%;
@@ -87,6 +84,9 @@ input::placeholder{
     width: 20%;
     height: 6%;
     display: none;
+}
+#loginForm {
+    color: white;
 }
 
 
