@@ -16,9 +16,9 @@
     <title>로그인 : 카카오스토리</title>
 </head>
 <body>
-    <div>
+    <header>
         <img src='assets/logo.png' id='logo'>
-    </div>
+    </header>
 
     <div class='wrap_login'>
         <div>
@@ -26,10 +26,32 @@
         </div>
 
         <form id='loginForm'>
-            <input type="text" id="textid" placeholder="&nbsp;&nbsp;이메일 또는 전화번호" required><br>
-            <input type="password" id="textpassword" placeholder="&nbsp;&nbsp;비밀번호" required><br>
-            <input type="checkbox" id="checkbox">로그인 상태 유지<br>
-            <input type="submit" id="loginbtn" value="로그인">
+            <fieldset>
+                <input type="text" id="textid" placeholder="이메일 또는 전화번호" style='padding: 0 40px 0 10px' required><br>
+                <input type="password" id="textpassword" placeholder="비밀번호" style='padding: 0 40px 0 10px' required><br>
+                <div class='set_login'>
+                    <input type="checkbox" id="chkbox" class='chkbox'>
+                    <label for="chkbox">로그인 상태 유지<span class='fake_chk'></span></label>
+                </div>
+                <input type="submit" id="loginbtn" value="로그인" style="margin-bottom: 0;">
+
+                <div id="errorBox"></div>
+
+                <div class='userinfo'>
+                    <div class='join_menu'>
+                        <a href='join.html' id='join_text'>회원가입</a>
+                    </div>
+
+                    <ul class='user_menu'>
+                        <li>
+                            <a href='#' id='findid'>카카오계정 찾기</a><span id='line'>|</span>
+                        </li>
+                        <li>
+                            <a href='#' id='resetpassword'>비밀번호 재설정</a>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
         </form>
 
         <!-- <div>
@@ -42,25 +64,12 @@
                 <a href="#">닫기</a>
             </div>
         </div> -->
-
-        <div id="errorBox"></div>
-
-        <div>
-            <div class='join_menu'>
-                <a href="join.html" id="join_text">회원가입</a>
-            </div>
-
-            <ul class='user_menu'>
-                <li>
-                    <a href="#" id="findid">카카오계정 찾기</a>
-                    <span id="line"> | </span>
-                </li>
-                <li>
-                    <a href="#" id="resetpassword">비밀번호 재설정</a>
-                </li>
-            </ul>
-        </div>
     </div>
+
+    <footer>
+        <small>Copyright © <a href="https://www.kakaocorp.com/">Kakao Corp.</a> All rights reserved.</small> 
+        <small>This is just a clone project of the Kakao Story.</small> 
+    </footer>
 
     <script src="js/login.js"></script>
 </body>

@@ -1,35 +1,36 @@
 *, ::after, ::before {
     box-sizing: inherit;
     font-family: 'Malgun Gothic', sans-serif;
+    user-select: none;
 }
+
 #logo{
     height: 30px;
     margin: 25px 0px 0px 25px;
 }
+
 #msg1{
     width: 203px;
     height: 94px;
     margin: 0px 0px 0px 0px;
 }
+
 #textid{
     width: 303px;
     height: 40px;
     margin: 20px 0px 0px 0px;
 }
+
 input::placeholder{
     font-size: 13px;   
 }
+
 #textpassword{
     width: 303px;
     height: 40px;
     margin: 10px 0px 0px 0px;
 }
-#checkbox{
-    margin: 15px 0px 0px 0px;
-    font-size: 13px;
-    /* background-color: #f9df33;
-    font-style: inherit; */
-}
+
 #loginbtn{
     width: 303px;
     height: 45px;
@@ -38,31 +39,14 @@ input::placeholder{
     font-weight: bolder;
     background: #f9df33;
     border: solid 2px #f9df33;
-    border-radius: 2px;
+    border-radius: 4px;
     font-size: 16px;
 }
-#join_text{
-    float: left;
-    color: white;
-    font-size: 11.5px;
-}
-#findid{
-    color: white;
-    font-size: 11.5px;
-}
-#resetpassword{
-    margin: 0px 0px 0px 8px;
-    color: white;
-    font-size: 11.5px;
-}
-#line{
-    color: white;
-    padding-bottom: -10px; 
-    font-size: 14px;
-}
+
 .btn{
     margin: -8.15% 0% 0% 57%;
 }
+
 .popup{
     background-color: #333333;
     width: 18.4%;
@@ -73,9 +57,11 @@ input::placeholder{
     margin: -8.15% 0% 0% 60.5%;
     padding: 0.2% 0% 0% 0.6%;
 }
+
 .popup:target{
     opacity: 1;
 }
+
 #errorBox{
    margin-left: 40%;
     background-color: black;
@@ -84,31 +70,121 @@ input::placeholder{
     height: 6%;
     display: none;
 }
+
 #loginForm {
     color: white;
 }
+
 .wrap_login {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 304px;
-    margin: -250px 0 0 -152px;
+    transform: translate(-50%, -71.5%);
     font-size: 13px;
+    color: white;
 }
+
+.userinfo {
+    letter-spacing: -1px;
+    margin-top: 13px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
 ul {
+    color: white;
     list-style: none;
-    padding: 0;
     margin: 0;
-}
-
-ul li {
-    float: left;
-}
-
-.join_menu {
-    float: left;
-}
-
-.user_menu {
+    padding: 0;
     float: right;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-size: 12px;
+}
+
+#line {
+    margin: 0 4px;
+}
+
+.join_menu{
+    float: left;
+    font-size: 12px;
+}
+
+#chkbox{
+    font-size: 13px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    opacity: 0;
+    padding: 0; 
+    border: 0 none; 
+    margin: 0; 
+    overflow: hidden;
+}
+
+label{
+    line-height: 15px; 
+    padding-left: 17px; 
+    display: inline-block; 
+    font-size: 13px; 
+    cursor: pointer;
+    margin: 0;
+    height: 12px;
+}
+
+.fake_chk {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    background: url(../assets/ico_login_320-74d6741adeafd677ebca00591edc913f.png);
+    background-position: -16px -44px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+input[type=checkbox].chkbox:checked + label span  {
+    background-position: -32px -44px;
+}
+
+.set_login {
+    position: relative;
+    margin-top: 10px;
+}
+
+input {
+    border: 0;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    width: 270px;
+    padding: 0;
+    transform: translate(-50%, 0%);
+    border: 0 none;
+    text-align: left;
+    color: white;
 }
