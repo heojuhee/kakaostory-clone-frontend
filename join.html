@@ -1,132 +1,141 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-        crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="css/join.css">
 
-    <title>로그인 : 카카오스토리</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+
+    <title>KaKao Web Login</title>
 </head>
 
 <body>
-    <form id="joinForm">
-        <div>
-            <img src="assets/yellow.JPG" id="yellow">
-        </div>
-        <div>
-            <img src="assets/logoBlack.png" id="logoBlack">
-            <p id="myid">계정</p>
-        </div>
-        <div>
-            <a href="login.html" class="toptext">로그인</a>
+<header>
+    <div>
+        <img src="assets/yellow.JPG" id="yellow">
+    </div>
+    <div>
+        <img src="assets/logoBlack.png" id="logoBlack">
+        <span id="myId">계정</span>
+    </div>
 
-            <a href="#" class="toptext1">도움말</a>
+        <ul class="userMenu">
+            <li>
+                <a href="login.html" class="topText">로그인&nbsp;&nbsp;</a>
+            </li>
+            <li>
+                <a href="#" class="topText1">도움말&nbsp;&nbsp;</a>
+            </li>
+            <li>
+                <a href="#" class="topText2">문의하기</a>
+            </li>
+        </ul>
+    </header>
+    
+    <hr id="hr1">
 
-            <a href="#" class="toptext2">문의하기</a>
-        </div>
-        <hr id="hr1">
-        </div>
+    <div class="joinInsert"><!-- 전체 div -->
         <div>
             <img src="assets/bar.png" id="bar">
             <p id="kakaoid">카카오계정 정보입력</p>
             <hr id="hr2">
         </div>
-        <!-- 이메일 -->
-        <div class="kakaoEmail">
-            <strong>
-                <p>카카오계정 이메일</p>
-                <input type="text" class="textemail" id="textemail" required>
-            </strong>
-            <p class="golbang">@</p>
-            <input type="text" class="textedaum" id="texteDaum" required>
-        </div>
+
+        <form id="joinForm">
         <div>
-            <select name="domainselect" class="domainselect" id="domainSelect">
-                <option value="">&nbsp;&nbsp;도메인 선택</option>
-                <option value="naver.com">naver.com</option>
-                <option value="hanmail.net">hanmail.net</option>
-                <option value="nate.com">nate.com</option>
-                <option value="gmail.com">gmail.com</option>
-                <option value="daum.net">daum.net</option>
-                <option value="hotmail.com">hotmail.com</option>
-                <option value="lycos.co.kr">lycos.co.kr</option>
-                <option value="korea.com">korea.com</option>
-                <option value="dreamwiz.com">dreamwiz.com</option>
-                <option value="yahoo.com">yahoo.com</option>
-                <option value="ymail.com">ymail.com</option>
-                <option value="live.com">live.com</option>
-                <option value="aol.com">aol.com</option>
-                <option value="msn.com">msn.com</option>
-                <option value="me.com">me.com</option>
-                <option value="icloud.com">icloud.com</option>
-                <option value="rocketmail.com">rocketmail.com</option>
-                <option value="qq.com">qq.com</option>
-                <option value="">직접입력</option>
-            </select>
-        </div>
-        <div class="text">
-            <p class="text1">· 입력한 이메일로 인증메일이 발송됩니다.</p>
-            <p class="text2">· 꼭 실제로 사용중인 이메일주소를 입력해주세요. 비밀번호 분실 시 이메일을 통해 재설정이 가능합니다.</p>
-        </div>
-        <!-- 비밀번호 -->
-        <div class="password">
-            <strong>
-                <p class="passwordtext">비밀번호(8~32자리)</p>
-            </strong>
-            <input type="password" class="passwordarea" id="passwordTextId" placeholder="&nbsp;비밀번호(8~32)" maxlength="32" required>
-        </div>
-        <div class="passwordok">
-            <strong>
-                <p class="passwordtextok">비밀번호 재입력</p>
-            </strong>
-            <input type="password" class="passwordareaok" id="passwordareaok" placeholder="&nbsp;비밀번호 재입력" maxlength="32" required>
-            <p class="text3">· 비밀번호는 8 ~ 32 자의 영문 대소문자, 숫자, 특수문자를 조합하여 설정해주세요.
-                <br> · 다른사이트에서 사용하는 것과 동일하거나 쉬운 비밀번호는 사용하지 마세요.
-                <br> · 안전한 계정 사용을 위해 비밀번호는 주기적으로 변경해주세요.</p>
-            <!-- 닉네임 -->
-            <div class="nickname">
-                <strong>
-                    <p class="nickname">닉네임</p>
-                </strong>
-                <input type="name" class="nicknamearea" placeholder="&nbsp;닉네임을 입력해주세요" required>
-            </div>
             <div>
+                <div class="kakaoUserEmail">
+                    <strong>
+                        <p>카카오계정 이메일</p>
+                    </strong>
+                </div>
+        
+                <ul class="insertEmail">
+                    <li>
+                        <input type="text" class="textEmail" required>
+                        <span class="golbang">@</span>
+                    </li>
+                    <li>
+                        <input type="text" class="textNext" required>
+                    </li>
+                </ul>
+            </div>
+        
+            <div>
+                <select name="domainselect" class="domainSelect">
+                    <option value="">&nbsp;&nbsp;도메인 선택</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    <option value="nate.com">nate.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="hotmail.com">hotmail.com</option>
+                    <option value="lycos.co.kr">lycos.co.kr</option>
+                    <option value="korea.com">korea.com</option>
+                    <option value="dreamwiz.com">dreamwiz.com</option>
+                    <option value="yahoo.com">yahoo.com</option>
+                    <option value="ymail.com">ymail.com</option>
+                    <option value="live.com">live.com</option>
+                    <option value="aol.com">aol.com</option>
+                    <option value="msn.com">msn.com</option>
+                    <option value="me.com">me.com</option>
+                    <option value="icloud.com">icloud.com</option>
+                    <option value="rocketmail.com">rocketmail.com</option>
+                    <option value="qq.com">qq.com</option>
+                    <option value="">직접입력</option>
+                </select>
+            </div>
+            <div class="text">
+                <p>· 입력한 이메일로 인증메일이 발송됩니다.
+                <br>· 꼭 사용중인 이메일주소를 입력해주세요. (비밀번호 분실 시 이메일을 통해 재설정이 가능)</p>
+            </div>
+        </div>
+            <div class="password">
                 <strong>
-                    <p class="people">성별</p>
+                    <p class="passwordtext">비밀번호(8~32자리)</p>
                 </strong>
-            </div>
-            <div class="pp">
-                <input type="radio" class="girl" name="genderSelect">여자&nbsp;&nbsp;&nbsp;
-                <input type="radio" class="boy" name="genderSelect">남자&nbsp;&nbsp;&nbsp;
-                <input type="radio" class="nothing" name="genderSelect" checked="checked">선택안함
-            </div>
-            <div class="nextbtn">
-                <input type="submit" value="다음">
+                <input type="password" class="passwordarea" placeholder="&nbsp;비밀번호(8~32)" maxlength="32" required>
             </div>
 
-            <div id ="wrap"> 
-                <div id = "container">  
-                    <div id="popUpmask"></div>
-                    <div id="popUpWindow">
-                        <p id="popUpContent"></p>
-                        <a href="#" id="close">닫기(여기 이미지 넣으삼)</a>
-                    </div>
+            <div class="passwordok">
+                <strong>
+                    <p class="passwordtextok">비밀번호 재입력</p>
+                </strong>
+                <input type="password" class="passwordarea" placeholder="&nbsp;비밀번호 재입력" maxlength="32" required>
+                <p class="textPassword">· 비밀번호는 8 ~ 32 자의 영문 대소문자, 숫자, 특수문자를 조합하여 설정해주세요.
+                    <br> · 다른사이트에서 사용하는 것과 동일하거나 쉬운 비밀번호는 사용하지 마세요.
+                    <br> · 안전한 계정 사용을 위해 비밀번호는 주기적으로 변경해주세요.</p>
+                <div class="nickName">
+                    <strong>
+                        <p class="nickName">닉네임</p>
+                    </strong>
+                    <input type="name" class="nickNameArea" placeholder="&nbsp;닉네임을 입력해주세요" required>
+                </div>
+                <div class="nextbtn">
+                    <input type="submit" value="다음">
                 </div>
             </div>
-            <script src="js/join.js"></script>
+    </div>
+    <!-- end 전체 div -->
     </form>
-</body>
+    <div id="wrap">
+        <div id="container">
+            <div id="popUpmask"></div>
+            <div id="popUpWindow">
+                <p id="popUpContent"></p>
+                <a href="#" id="close">닫기(여기 이미지 넣으삼)</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/join.js"></script>
 
+</body>
 </html>
