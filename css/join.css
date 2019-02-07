@@ -110,6 +110,9 @@ header{
     font-size: 13px;
     transform: translate(580%, -100%);
 }
+
+select::-ms-expand { display: none; }
+
 .text{
     margin-left: 40%;
     font-size: 12.5;
