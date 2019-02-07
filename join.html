@@ -20,21 +20,22 @@
 <body>
     <header>
         <div>
+            <ul class="userMenu">
+                <li>
+                    <a href="login.html" class="topText">로그인&nbsp;&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="topText1">도움말&nbsp;&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="topText2">문의하기</a>
+                </li>
+            </ul>
+        </div>
+        <div>
             <img src="assets/logoBlack.png" id="logoBlack">
             <span id="myId">계정</span>
         </div>
-
-        <ul class="userMenu">
-            <li>
-                <a href="login.html" class="topText">로그인&nbsp;&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="topText1">도움말&nbsp;&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="topText2">문의하기</a>
-            </li>
-        </ul>
     </header>
 
     <div class="joinInsert">
@@ -51,7 +52,7 @@
                         <p>카카오계정 이메일</p>
                     </strong>
                 </div>
-        
+
                 <ul class="insertEmail">
                     <li>
                         <input type="text" class="textEmail" required>
@@ -62,7 +63,7 @@
                     </li>
                 </ul>
             </div>
-        
+
             <div>
                 <select name="domainselect" class="domainSelect">
                     <option value="">&nbsp;&nbsp;도메인 선택</option>
@@ -91,14 +92,14 @@
                 <p>· 입력한 이메일로 인증메일이 발송됩니다.
                     <br>· 꼭 사용중인 이메일주소를 입력해주세요. (비밀번호 분실 시 이메일을 통해 재설정이 가능)</p>
             </div>
-        
+
             <div class="password">
                 <strong>
                     <p class="passwordtext">비밀번호(8~32자리)</p>
                 </strong>
                 <input type="password" class="passwordArea" placeholder="&nbsp;비밀번호(8~32)" maxlength="32" required>
-            </div>        
-        
+            </div>
+
             <div class="passwordok">
                 <strong>
                     <p class="passwordtextok">비밀번호 재입력</p>
@@ -108,19 +109,19 @@
                     <br> · 다른사이트에서 사용하는 것과 동일하거나 쉬운 비밀번호는 사용하지 마세요.
                     <br> · 안전한 계정 사용을 위해 비밀번호는 주기적으로 변경해주세요.</p>
             </div>
-        
+
             <div class="nick-Name">
                 <strong>
                     <p class="nickName">닉네임</p>
                 </strong>
                 <input type="name" class="nickNameArea" placeholder="&nbsp;닉네임을 입력해주세요" required>
             </div>
-    
-            <div class="nextbtn" >
+
+            <div class="nextbtn">
                 <input type="submit" value="다음" class="button">
             </div>
         </form>
-    </div> 
+    </div>
 
     <div id="wrap">
         <div id="container">
@@ -134,4 +135,5 @@
     <script src="js/join.js"></script>
 
 </body>
+
 </html>

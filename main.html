@@ -12,41 +12,88 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="js/jquery.backstretch.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <title>카카오스토리</title>
 </head>
 <body>
-    <div><!--전체 div-->
-        <div></div>
-        <nav class="navbar " id="topBar">
-            <a class="navbar-brand" href="#">
-                <img src="assets/logoRed.png" id="logoRed">
-            </a>
-            <div id="search">
-                <input type="text" id="searchArea" placeholder="친구, 장소, 태그 검색">
-                <input type="image" src="assets/search.png">
-            </div>
-            <ul class='mainTop'>
-                <li>
-                    <a href='#' id='writeTop'>
-                        <img src="assets/write.png">
-                    </a>
-                    <a href='#' id='listTop'>
-                        <img src="assets/list.png">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <div>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="topBar" >
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logoRed.png" id="logoRed">
+                </a>
+                <div id="search">
+                    <input type="text" id="searchArea" placeholder="친구, 장소, 태그 검색">
+                    <input type="image" id="searchImg" src="assets/search.png">
+                </div>
+                <ul class='mainTop'>
+                    <li>
+                        <a href='#' id='writeTop'>
+                            <img src="assets/write.png">
+                        </a>
+                        <a href='#' id='listTop'>
+                            <img src="assets/list.png">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
     </div>
 
     <div>
+        <input type="text" class="individualWrite" placeholder="오늘 하루, 기억하고 싶은 순간이 있나요?">
         <div>
-            <input type="text" class="individualWrite" placeholder="오늘 하루, 기억하고 싶은 순간이 있나요?">
+            <button class="btn">
+                <a href="#" class="cameraText">
+                    <img src="assets/camera.png" class="cameraBtn">사진
+                </a>
+            </button>
         </div>
-    <div>
-
     </div>
-</div><!--end 전체 div  -->
-    <script src="#"></script>
+
+    <div>
+        <input type="text" class="otherWrite">
+        <div>
+        </div>
+    </div>
+
+    <div>
+        <div class="rightSection">
+            <a href="#" class="settingImg">
+                <img src="assets/setting.png">
+            </a>
+            <a href="#">
+                <img src="assets/profile.jpg" class="myImg">
+            </a>
+            <a href="#" id="sectionText">
+                <span>허주희</span>
+            </a>
+        </div>
+
+        <div>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">친구</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">신청</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">쪽지</button>
+            </div>
+        
+            <div id="London" class="tabcontent">
+                <h3>친구</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+        
+            <div id="Paris" class="tabcontent">
+                <h3>신청</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+        
+            <div id="Tokyo" class="tabcontent">
+                <h3>쪽지</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+    </div>
+
+        
+    <script src="js/main.js"></script>
 </body>
 </html>

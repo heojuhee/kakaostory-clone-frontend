@@ -2,31 +2,32 @@
     box-sizing: inherit;
     font-family: 'Nanum Gothic', sans-serif;
 }
+A:hover {
+    color: black;
+}
 
 header{
     border-top: 4px solid #ffde00; 
     border-bottom: 0.3px solid #d1d0d0;
-    height: 60px;
+    height: 64px;
 }
 
 #logoBlack{
-    position: absolute;
-    width: 63px;
-    height: 18px;
-    top: 2%;
-    left: 1%;
+    width: 62.5px;
+    height: 20px;
+    margin-left: -155px;
+    margin-bottom: 6px;
 }
 
 #myId{
-    position: absolute;
     font-size: 17.5px;
-    font-weight: 400;
-    margin: 0.7% 0% 0% 4.9%;
+    font-weight: 700;
+    margin-left: 5px;
 }
 
 .userMenu{
-    position: absolute;
-    margin: 0.7% 0% 2% 89%;
+    position: relative;
+    transform: translate(89%, 0%);
 }
 
 .topText{
@@ -44,41 +45,36 @@ header{
     font-size: 13.5px;
 }
 
-#bar{
-    margin: 20px 0px 0px 360px;
-}
-
 #kakaoid{
     font-weight: 900;
-    font-size: 20px;
-    margin: 33px 0px 0px 360px; 
+    font-size: 180%;
+    transform: translate(0%, 30%);
 }
 
 #hr2{
-    width: 810px;
-    margin: 7px 0px 0px 360px;
-    color: #000000;
-    background-color: #000000;
+    width: 803px;
+    background-color: #333333;
+    transform: translate(-6%, 2%);
 }
 
 #joinForm{
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    left: 50%;
+    width: 900px;
+    transform: translate(-60%, 5%);
 }
 
 #email{
-    margin-top: 3.5%; 
+    margin-top: 1%; 
 }
 
 .kakaoUserEmail {
     font-size: 15px;
-    float: center;
     margin-left: 31%;
 }
 
-.insertEmail, #password{
-    float: left;
-    margin: -4% 0 5% 41%;
+.insertEmail{
+    margin: -4.5% 0 5% 45%;
 }
 
 .textEmail{
@@ -86,15 +82,14 @@ header{
     height: 38px;
     border: 1px solid #CCCCCC;
     border-radius: 3px;
-    margin-right: auto;
-    margin-left: auto;
 }
-
 .golbang{
     font-size: 15px;
     color: #666666;
 }
-
+.password{
+    position: relative;
+}
 .textNext{
     width: 145px;
     height: 38px;
@@ -102,7 +97,6 @@ header{
     border-radius: 3px;
     margin-left: 4%;
 }
-
 .domainSelect{
     background: url('../assets/arrowDown.png') no-repeat 95% 50%;
     -webkit-appearance: none; /* 화살표 없애기*/
@@ -114,93 +108,85 @@ header{
     height: 38.5px;
     color: #666666;
     font-size: 13px;
-    position: absolute;
-    margin: -4% 0% 0% 2%;
+    transform: translate(580%, -100%);
 }
-
 .text{
-    position: absolute;
-    left: 44%;
+    margin-left: 40%;
     font-size: 12.5;
     color: rgb(136, 135, 135);
+    transform: translate(15%, -70%);
 }
-
 .passwordtext{
     position: absolute;
-    top: 110%;
+    top: 28%;
     left: 30.9%;
     font-size: 15px;
 }
 .passwordArea{
-    position: absolute;
-    top: 110%;
-    left: 44.6%;
+    margin-left: 49.5%;
     border: 1px solid #CCCCCC;
     border-radius: 3px;
     font-size: 13px;
     width: 300px;
     height: 38px;
 }
-
-.passwordtextok{
-    position: absolute;
-    top: 144%;
-    left: 31%;
-    font-size: 14.6px;
+.passwordok{
+    position: relative;
 }
+
+.passwordtextok{ 
+    font-size: 14.6px;
+    margin-left: 30.9%;
+    transform: translate(0%, 200%);
+}
+
 .passwordAreaOk{
-    position: absolute;
-    top: 180%;
-    left: 44.5%;
     border: 1px solid #CCCCCC;
     border-radius: 3px;
     width: 300px;
     height: 38px;
     top: 140%;;
+    transform: translate(148%, 0%);
 }
 
 .textPassword{
-    position: absolute;
     top: 157.5%;
     left: 44%;
     font-size: 12.5px;
     color: rgb(136, 135, 135);
+    transform: translate(49%, 20%);
 }
 
 .nickName{
-    position: absolute;
-    top: 190%;
-    left: 31%;
+    position: relative;
     font-size: 14.6px;
+    transform: translate(31.2%, 136%);
 }
+
 .nickNameArea{
-    position: absolute;
-    top: 188%;
-    left: 44.5%;
+    position: relative;
     border: 1px solid #CCCCCC;
     border-radius: 3px;
     font-size: 13px;
     width: 300px;   
     height: 38px;
+    transform: translate(148%, -50%);
 }
 
 .nextbtn{
-    margin: 30px 0px 0px 700px;
-    width: 30px;
-    height: 50px;
+    position: relative;
 }
 
 .button{
-    position: absolute;
-    top: 220%;
-    left: 60%;
-    height: 23%;
-    width: 96px;
+    position: relative;
+    height: 55px;
+    width: 100px;
     border: 1px solid #d3d1d1;
     background-color: #d3d1d1;
     border-radius: 3px;
     font-size: 14px;
-    color: #868484;
+    color: #636363;
+    transform: translate(600%, 30%);
 }
 
 #popUpmask {  
@@ -233,9 +219,14 @@ ul li {
 
 .joinInsert{
     position: absolute;
-    top: 7.5%;
-    left: 10%;
-    width: auto;
-    height: auto;   
+    width: 65%;
     font-size: 13px;
+    transform: translate(18%, 5%); 
+}
+
+#kakao{
+    position: relative;
+    left: 50%;
+    width: 900px;
+    transform: translate(-35%, 5%);
 }

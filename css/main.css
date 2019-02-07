@@ -14,20 +14,27 @@ body{
     
 }
 #searchArea{
+
     border: none;
     border-bottom: 2.5px solid #f1f1f1; 
     font-size: 12px;
     size: 5px;
-    
+}
+#search{
+    position: absolute;
+    margin: 0% 0% 0% 8%;
+}
+#searchImg{
+    margin-top: 6%;
 }
 .mainTop{
     margin: 0% 0% 0% 0%;
-
 }
 ul li{
     list-style: none;
 }
-.individualWrite{
+.individualWrite, .otherWrite{
+    display: block;
     position: absolute;
     margin: 1.2% 0% 0% 27.8%;
     background-color: white;
@@ -36,4 +43,123 @@ ul li{
     height: 15%;
     padding: 0 0 3% 2%;
     font-size: 13.5px;
+}
+.btn{
+    display: block;
+    position: absolute;
+    top: 17.5%;
+    left: 28.5%;
+    color: black;
+    width: 28.7%;
+    height: 5%;
+}
+.cameraBtn{
+    color: black;
+    border: 1px solid f1f1f1; 
+    font-size: 17px;
+}
+.cameraText{
+    color: black;
+}
+.otherWrite{
+    margin-top: 10%;
+    padding-top: 1%; 
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.6s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.settingImg{
+    position: absolute;
+    top: 7.5%;
+    left: 86%;
+
+}
+.rightSection{
+    float:right;
+    border-right:1px solid blcck;
+
+
+}
+.myImg{
+    position: absolute;
+    top: 10.5%;
+    left: 91%;
+    border-radius: 50%;
+}
+#sectionText{
+    position: absolute;
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+    left: 90.8%;
+    top: 18%;
 }
