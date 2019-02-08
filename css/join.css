@@ -5,30 +5,65 @@
 A:hover {
     color: black;
 }
+#navBarDiv{
+    
+}
 
 header{
     border-top: 4px solid #ffde00; 
     border-bottom: 0.3px solid #d1d0d0;
     height: 64px;
 }
+.nav-item {
+    clear:both;
+    float:left;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 15px 15px 20px;
+    font-size: 15.5px;
+    height: 15px;
+    transform: translate(300%, 45%);
+}
 
 #logoBlack{
+    /* 0position: relative;
+    float: left;
+    /* transform: translate(-100%, 50%);
+    left: 1%;
+    top: 45% */
+    /* width: 62.5px;
+    height: 20px;
+    margin-left: -380%;
+    margin-bottom: -16%; */
     width: 62.5px;
     height: 20px;
     margin-left: -155px;
     margin-bottom: 6px;
 }
 
+.navbar-nav {
+    margin-top: 10px;
+}
+
+#navBarDiv{
+    /* position: relative;
+    transform: translate(%, 0%); */
+    /* margin-right: 20%; */
+    float: right;
+}
+
 #myId{
     font-size: 17.5px;
     font-weight: 700;
-    margin-left: 5px;
+    margin-left: 6px;
+     /* margin-top: 40%; */
+    transform: translate(-20%, 5%);
 }
 
-.userMenu{
+/* .userMenu{
     position: relative;
     transform: translate(89%, 0%);
-}
+} */
 
 .topText{
     color: black;
